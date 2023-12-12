@@ -6,15 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<DataContext>(
-    o => o.UseNpgsql(builder.Configuration.GetConnectionString("HospitalDb"))
-);
 
-// builder.Services.AddDbContext<DataContext>(options=>{
-//     var config = builder.Configuration;
-//     var connectionString = config.GetConnectionString("HospitalDb");
-//     options.UsePostgreSql(connectionString);
-// });
+
+builder.Services.AddDbContext<DataContext>(options=>{
+    var config = builder.Configuration;
+    var connectionString = config.GetConnectionString("HospitalDb");
+    options.UseSqlServer(connectionString);
+});
 
 var app = builder.Build();
 
