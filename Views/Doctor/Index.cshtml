@@ -1,0 +1,32 @@
+@model IEnumerable<Doctor>
+
+    <h2>Doctor List</h2>
+    <a href="/Doctor/Create" class="btn btn-primary">Add Doctor</a>
+    <hr>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(m=> m.DocName)</th>
+                <th>@Html.DisplayNameFor(m=> m.DocSurname)</th>
+                <th>@Html.DisplayNameFor(m=> m.DocEmail)</th>
+                <th>@Html.DisplayNameFor(m=> m.DocSpeacialty)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem=> item.DocName)</td>
+                    <td>@Html.DisplayFor(modelItem=> item.DocSurname)</td>
+                    <td>@Html.DisplayFor(modelItem=> item.DocEmail)</td>
+                    <td>@Html.DisplayFor(modelItem=> item.DocSpeacialty)</td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-primary">Details</a>
+                        <a href="" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
