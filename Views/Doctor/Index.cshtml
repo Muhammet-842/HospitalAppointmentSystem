@@ -7,6 +7,7 @@
     <table class="table table-bordered">
         <thead>
             <tr>
+                <th>@Html.DisplayNameFor(m=> m.DoctorId)</th>
                 <th>@Html.DisplayNameFor(m=> m.DocName)</th>
                 <th>@Html.DisplayNameFor(m=> m.DocSurname)</th>
                 <th>@Html.DisplayNameFor(m=> m.DocEmail)</th>
@@ -17,13 +18,14 @@
             @foreach(var item in Model)
             {
                 <tr>
+                    <td>@Html.DisplayFor(modelItem=> item.DoctorId)</td>
                     <td>@Html.DisplayFor(modelItem=> item.DocName)</td>
                     <td>@Html.DisplayFor(modelItem=> item.DocSurname)</td>
                     <td>@Html.DisplayFor(modelItem=> item.DocEmail)</td>
                     <td>@Html.DisplayFor(modelItem=> item.DocSpeacialty)</td>
                     <td>
-                        <a asp-controller="Doctor" asp-action="EditDoc" asp-route-id="@item.DoctorId" class="btn btn-sm btn-primary">Edit</a>
-                        <a href="" class="btn btn-sm btn-danger">Delete</a>
+                        <a asp-action="EditDoc" asp-route-id="@item.DoctorId" class="btn btn-sm btn-primary">Edit</a>
+                        <a asp-action="DeleteDoc" asp-route-id="@item.DoctorId" class="btn btn-sm btn-danger">Delete</a>
                     </td>
                 </tr>
             }

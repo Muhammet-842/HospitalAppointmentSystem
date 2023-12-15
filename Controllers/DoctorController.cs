@@ -72,5 +72,33 @@ namespace HospitaAppointmentSystem.Controllers
             }
             return View(model);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> DeleteDoc(int? id)
+        {
+            if (id==null)
+            {
+                return NotFound();
+            }
+            var doctor = await _context.Doctors.FindAsync(id);
+            if (doctor == null)
+            {
+                return NotFound();
+            }
+            return View(doctor);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteDoc([FromForm]int id)
+        {
+            var doctor = await _context.Doctors.FindAsync(id);
+            if (doctor == null)
+            {
+                return NotFound();
+            }
+            _context.Doctors.Remove(doctor);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
     }
 }
