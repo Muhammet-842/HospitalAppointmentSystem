@@ -5,7 +5,11 @@ This is a full-stack web programming project. In this project, a sample  of hosp
 -TECHNOLOGIES-
 
 *ASP.Net Core MVC
+
 *Entity Framework (ORM)
+
 *C#
+
 *MS SQL Database
+
 *JavaScript
