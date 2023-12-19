@@ -36,7 +36,11 @@ namespace HospitaAppointmentSystem.Controllers
             {
                 return NotFound();
             }
-            var doctor = await _context.Doctors.FindAsync(id);
+            var doctor = await _context
+                                .Doctors
+                                .Include(o=>o.Appointments)
+                                .ThenInclude(o=>o.Patient)
+                                .FirstOrDefaultAsync(o=>o.DoctorId==id);
             if (doctor==null)
             {
                 return NotFound();
