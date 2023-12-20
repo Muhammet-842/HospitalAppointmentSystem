@@ -25,8 +25,6 @@ namespace HospitaAppointmentSystem.Controllers
         }
 
         
-
-        
         public async Task<IActionResult> CreateAppointment()
         {
             ViewBag.Doctors = new SelectList(await _context.Doctors.ToListAsync(), "DoctorId","DocNameSurname");
