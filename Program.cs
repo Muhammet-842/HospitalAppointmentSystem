@@ -1,4 +1,5 @@
 using HospitaAppointmentSystem.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<DataContext>(options=>{
     var connectionString = config.GetConnectionString("HospitalDb");
     options.UseSqlServer(connectionString);
 });
+builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<DataContext>();
 
 var app = builder.Build();
 
@@ -35,4 +37,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+IdentitySeedData.IdentityTestUser(app);
 app.Run();
