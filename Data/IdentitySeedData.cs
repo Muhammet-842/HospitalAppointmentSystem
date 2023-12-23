@@ -6,7 +6,7 @@ namespace HospitaAppointmentSystem.Data
     public static class IdentitySeedData
     {
         private const string adminUser = "Admin";
-        private const string adminPassword = "Admin_123";
+        private const string adminPassword = "sau";
 
         public static async void IdentityTestUser(IApplicationBuilder app)
         {
@@ -16,19 +16,20 @@ namespace HospitaAppointmentSystem.Data
                 context.Database.Migrate();
             }
 
-            var userManager = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+            var userManager = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<UserManager<AppUser>>();
             var user = await userManager.FindByNameAsync(adminUser);
 
-            if (user==null)
-            {
-                user = new IdentityUser{
-                    UserName = adminUser,
-                    Email="admin@mami.com",
-                    PhoneNumber="21212121"
-                };
+            // if (user==null)
+            // {
+            //     user = new AppUser{
+            //         FullName="admin",
+            //         UserName = adminUser,
+            //         Email="g201210011@sakarya.edu.tr",
+            //         PhoneNumber="21212121"
+            //     };
 
-                await userManager.CreateAsync(user,adminPassword);
-            }
+            //     await userManager.CreateAsync(user,adminPassword);
+            // }
         }
     }
 }
