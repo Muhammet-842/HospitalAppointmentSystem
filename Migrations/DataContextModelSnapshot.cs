@@ -69,7 +69,6 @@ namespace HospitaAppointmentSystem.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
@@ -162,6 +161,9 @@ namespace HospitaAppointmentSystem.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DocSurname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("DoctorId");

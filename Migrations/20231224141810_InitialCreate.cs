@@ -30,7 +30,7 @@ namespace HospitaAppointmentSystem.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -60,7 +60,8 @@ namespace HospitaAppointmentSystem.Migrations
                     DocName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DocSurname = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DocEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DocSpeacialty = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    DocSpeacialty = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
