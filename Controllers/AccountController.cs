@@ -55,5 +55,37 @@ namespace HospitaAppointmentSystem.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login");
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateViewModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                var user = new AppUser { 
+                    UserName = model.UserName,
+                    Email = model.Email, 
+                    FullName = model.FullName 
+                };
+
+                IdentityResult result = await _userMnanager.CreateAsync(user, model.Password);
+
+                if(result.Succeeded)
+                {
+                    return RedirectToAction("Login","Account");
+                }
+
+                foreach (IdentityError err in result.Errors)
+                {
+                    ModelState.AddModelError("", err.Description);                    
+                }
+
+            }
+            return View(model);
+        }
     }
 }

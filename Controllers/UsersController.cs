@@ -30,6 +30,7 @@ namespace HospitaAppointmentSystem.Controllers
         {
             return View();
         }
+        
         [HttpPost]
         public async Task<IActionResult> Create(CreateViewModel model)
         {
