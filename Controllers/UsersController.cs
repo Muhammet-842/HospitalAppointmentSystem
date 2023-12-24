@@ -1,11 +1,13 @@
 using HospitaAppointmentSystem.Data;
 using HospitaAppointmentSystem.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace HospitaAppointmentSystem.Controllers
 {
+    [Authorize(Roles ="admin")]
     public class UsersController:Controller
     {
 
