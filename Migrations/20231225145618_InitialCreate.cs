@@ -198,6 +198,7 @@ namespace HospitaAppointmentSystem.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PatientId = table.Column<int>(type: "int", nullable: false),
                     DoctorId = table.Column<int>(type: "int", nullable: false),
+                    AppointmentTime = table.Column<TimeSpan>(type: "time", nullable: false),
                     AppointmentDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>

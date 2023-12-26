@@ -128,6 +128,9 @@ namespace HospitaAppointmentSystem.Migrations
                     b.Property<DateTime>("AppointmentDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<TimeSpan>("AppointmentTime")
+                        .HasColumnType("time");
+
                     b.Property<int>("DoctorId")
                         .HasColumnType("int");
 
