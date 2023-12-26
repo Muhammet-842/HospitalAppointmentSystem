@@ -1,5 +1,6 @@
 using System.Globalization;
 using HospitaAppointmentSystem.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -8,11 +9,13 @@ namespace HospitaAppointmentSystem.Controllers
 {
     public class AppointmentController:Controller
     {
+        private readonly UserManager<AppUser> _userManager;
         private readonly DataContext _context;
 
-        public AppointmentController(DataContext context)
+        public AppointmentController(UserManager<AppUser> userManager,DataContext context)
         {
             _context = context;
+            _userManager=userManager;
         }
 
         public async Task<IActionResult> IndexAppointment()
@@ -25,8 +28,9 @@ namespace HospitaAppointmentSystem.Controllers
         }
 
         
-        public async Task<IActionResult> CreateAppointment()
+        public async Task<IActionResult> CreateAppointment(int? doctorId)
         {
+            
             ViewBag.Doctors = new SelectList(await _context.Doctors.ToListAsync(), "DoctorId","DocNameSurname");
             ViewBag.Patients = new SelectList(await _context.Patients.ToListAsync(), "PatientId","PatientNameSurname");
             DateTime selectedDate = DateTime.Today;
@@ -51,7 +55,7 @@ namespace HospitaAppointmentSystem.Controllers
             }
             _context.Appointments.Add(model);
             await _context.SaveChangesAsync();
-            return RedirectToAction("IndexAppointment");
+            return RedirectToAction("Index","Home");
         }
 
 
@@ -83,9 +87,12 @@ namespace HospitaAppointmentSystem.Controllers
         }
 
 
+        
         [HttpGet]
         public async Task<IActionResult> EditAppointment(int? id)
         {
+            ViewBag.Doctors = new SelectList(await _context.Doctors.ToListAsync(), "DoctorId","DocNameSurname");
+            ViewBag.Patients = new SelectList(await _context.Patients.ToListAsync(), "PatientId","PatientNameSurname");
             DateTime selectedDate = DateTime.Today;
             ViewBag.AvailableTimes = await GetAvailableTimes(selectedDate);
             if(id==null)
