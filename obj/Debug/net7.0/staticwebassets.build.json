@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yzE2l11MM3hsjQ5fSTov+FupxDDi6ZgmXSVAddnKGK0=",
+  "Hash": "441pOJrEHGw1YvJxS9vLevkcVq+e5p0ivnQvefgNrPE=",
   "Source": "HospitaAppointmentSystem",
   "BasePath": "_content/HospitaAppointmentSystem",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\HospitaAppointmentSystem.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\css\\homeindex.css",
+      "SourceId": "HospitaAppointmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\",
+      "BasePath": "_content/HospitaAppointmentSystem",
+      "RelativePath": "css/homeindex.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\homeindex.css"
     },
     {
       "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\css\\site.css",
@@ -102,23 +119,6 @@
       "OriginalItemSpec": "wwwroot\\img\\0584d60d-5334-4a98-baa1-32a97639ce97.jpeg"
     },
     {
-      "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\2575213e-43e5-454a-adc5-34375cb2ca07.jpeg",
-      "SourceId": "HospitaAppointmentSystem",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\",
-      "BasePath": "_content/HospitaAppointmentSystem",
-      "RelativePath": "img/2575213e-43e5-454a-adc5-34375cb2ca07.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\2575213e-43e5-454a-adc5-34375cb2ca07.jpeg"
-    },
-    {
       "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\3b6454a2-3b34-404b-a531-59ea16bfb677.jpg",
       "SourceId": "HospitaAppointmentSystem",
       "SourceType": "Discovered",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\87c0c086-2eb4-43ea-a275-585c0037cf87.png"
+    },
+    {
+      "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\b75884ec-828d-453b-8902-dbcd95f1828d.jpeg",
+      "SourceId": "HospitaAppointmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\",
+      "BasePath": "_content/HospitaAppointmentSystem",
+      "RelativePath": "img/b75884ec-828d-453b-8902-dbcd95f1828d.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\b75884ec-828d-453b-8902-dbcd95f1828d.jpeg"
     },
     {
       "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\doctor.png",
@@ -202,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\emre.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\img2.jpg",
+      "SourceId": "HospitaAppointmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\",
+      "BasePath": "_content/HospitaAppointmentSystem",
+      "RelativePath": "img/img2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\img2.jpg"
     },
     {
       "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\js\\createAppointment.js",
