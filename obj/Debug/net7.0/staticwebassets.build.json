@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "441pOJrEHGw1YvJxS9vLevkcVq+e5p0ivnQvefgNrPE=",
+  "Hash": "Dy0JfT8iLmKAyixj9Les3qA6dfsU6juAeRVc/gSt8w0=",
   "Source": "HospitaAppointmentSystem",
   "BasePath": "_content/HospitaAppointmentSystem",
   "Mode": "Default",
@@ -102,40 +102,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\0584d60d-5334-4a98-baa1-32a97639ce97.jpeg",
-      "SourceId": "HospitaAppointmentSystem",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\",
-      "BasePath": "_content/HospitaAppointmentSystem",
-      "RelativePath": "img/0584d60d-5334-4a98-baa1-32a97639ce97.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\0584d60d-5334-4a98-baa1-32a97639ce97.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\3b6454a2-3b34-404b-a531-59ea16bfb677.jpg",
-      "SourceId": "HospitaAppointmentSystem",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\",
-      "BasePath": "_content/HospitaAppointmentSystem",
-      "RelativePath": "img/3b6454a2-3b34-404b-a531-59ea16bfb677.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\3b6454a2-3b34-404b-a531-59ea16bfb677.jpg"
-    },
-    {
       "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\87c0c086-2eb4-43ea-a275-585c0037cf87.png",
       "SourceId": "HospitaAppointmentSystem",
       "SourceType": "Discovered",
@@ -151,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\87c0c086-2eb4-43ea-a275-585c0037cf87.png"
+    },
+    {
+      "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\ac876fac-d189-4a67-b580-63ca032f909f.jpg",
+      "SourceId": "HospitaAppointmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\",
+      "BasePath": "_content/HospitaAppointmentSystem",
+      "RelativePath": "img/ac876fac-d189-4a67-b580-63ca032f909f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ac876fac-d189-4a67-b580-63ca032f909f.jpg"
     },
     {
       "Identity": "C:\\Users\\OEM\\OneDrive\\Masaüstü\\HospitalAppointmentSystem\\wwwroot\\img\\b75884ec-828d-453b-8902-dbcd95f1828d.jpeg",
